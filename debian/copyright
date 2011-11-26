@@ -11,7 +11,8 @@ License: GPL-2
   version 2.
 
 Files: debian/*
-Copyright: © 2005-2010 Stefan Lippers-Hollmann <s.l-h@gmx.de>
+Copyright: 2011, Alf Gaida <agaida@siduction.org>
+           2005-2010, Stefan Lippers-Hollmann <s.l-h@gmx.de>
 License: GPL-2
   The Debian packaging information is licensed under the GNU General
   Public License, version 2.
