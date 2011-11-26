@@ -1,3 +1,11 @@
+kernel-remover (3.1.5) unstable; urgency=low
+
+  * Introduce me as Maintainer
+  * remove aptosid stuff
+  * misc changes
+
+ -- Alf Gaida <agaida@ramme>  Sat, 26 Nov 2011 11:43:16 +0100
+
 kernel-remover (3.1.4) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
