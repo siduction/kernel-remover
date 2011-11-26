@@ -1,0 +1,8 @@
+?package(kernel-remover): \
+	needs="X11" \
+	section="Applications/System/Administration" \
+	hints="aptosid,Config" \
+	title="remove old kernel" \
+	icon32x32="/usr/share/pixmaps/kernel-remover.xpm" \
+	icon16x16="/usr/share/pixmaps/kernel-remover-16.xpm" \
+	command="su-to-root -c /usr/sbin/kernel-remover"

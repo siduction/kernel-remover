@@ -1,0 +1,47 @@
+# Fancy skript to remove the installed aptosid kernels
+# Copyright (C) 2007-2010 Joaquim Boura <x-un-i@berlios.de>
+# This file is distributed under the same license as the PACKAGE package.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: kernel-remover.sh 0.00.1\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2008-03-29 00:01+0000\n"
+"Last-Translator: Joaquim Boura <x-un-i@berlios.de>\n"
+"Language-Team: aptosid <translation-team@aptosid.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: kernel-remover:94
+msgid "Removing installed kernels"
+msgstr "Entfernen installierten Kernels"
+
+#: kernel-remover:98
+msgid "The actual (active) kernel is ${PAD}$(uname -r)${PAD}"
+msgstr "Der aktuelle (akive) Kernel ist ${PAD}$(uname -r)${PAD}"
+
+#: kernel-remover:99
+msgid "The actual (active) kernel is $(uname -r)"
+msgstr "Der aktuelle (akive) Kernel ist $(uname -r)"
+
+#: kernel-remover:213
+msgid "There is only one kernel installed on this system. Nothing to be done!"
+msgstr "Dieses System hat nur einen Kernel installiert. Nichts zu tun!"
+
+#: kernel-remover:222
+msgid "removing kernel ${i}"
+msgstr "Kernel ${i} wird entfernt."
+
+#: kernel-remover:226
+msgid "The following kernels have been removed: \"${KernelList}\""
+msgstr "Folgende Kernel sind entfernt worden: \"${KernelList}\""
+
+#: kernel-remover:240
+msgid "Should I remove this kernel?"
+msgstr "Soll dieser Kernel entfernt werden?"
+
+#: kernel-remover:247
+msgid "Kernel not removed:"
+msgstr "Kernel wurde nicht entfernt:"

@@ -1,0 +1,28 @@
+.TH KERNEL-REMOVER "8" "March 2008" "" ""
+.SH NAME
+kernel-remover \- removes aptosid kernels
+.SH SYNOPSIS
+\fBkernel-remover\fR \fI<options>\fR
+.SH DESCRIPTION
+removes \fBaptosid\fR kernels (and probably other ones too) from a system \fR
+running \fBaptosid.\fR 
+.PP
+.SH OPTIONS
+.TP
+\fB\-h\fR
+print help screen
+.TP
+\fB\-F \fI<graphic-frontend>\fR
+uses \fI<graphic-frontend>\fR as the graphic frontend for the output\fR
+possible frontends are \fBtext\fR | \fBdialog\fR | \fBkdialog\fR | \fBzenity\fR
+.TP
+\fB\-f\fR
+force remove all kernels except the running one. No confirmation is asked,\fR
+do it immediately.
+.TP
+\fB\-x \fI<kernel_list>\fR
+remove the kernel(s) given in the parameter list using the output of 
+\fIuname \-r\fR No confirmation is asked, do it immediately.
+.PP
+.SH AUTHOR
+This manual page was written by Joaquim Boura <x-un-i@aptosid.com>.

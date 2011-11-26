@@ -1,0 +1,2040 @@
+kernel-remover (3.1.4) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 29 Apr 2011 04:57:04 +0200
+
+kernel-remover (3.1.3) unstable; urgency=low
+
+  * bump standards version to 3.9.2, no changes necessary.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 29 Apr 2011 04:56:33 +0200
+
+kernel-remover (3.1.2) unstable; urgency=low
+
+  * drop transitional meta package.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 21 Jan 2011 14:08:09 +0100
+
+kernel-remover (3.1.1) unstable; urgency=low
+
+  * fix x-un-i's mail address.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 06 Oct 2010 15:01:07 +0200
+
+kernel-remover (3.1.0) unstable; urgency=low
+
+  * adapt for aptosid, drop no longer required quirks.
+  * drop kelmo from debian/copyright, the kernelhacking tools have been removed
+    from this package.
+  * update copyrights, fix eMail addresses.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 27 Aug 2010 18:48:06 +0200
+
+kernel-remover (3.0.4) unstable; urgency=low
+
+  * drop recommends on menu.
+  * drop conditional update-grub call, it's no longer required.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 21 Aug 2010 23:23:19 +0200
+
+kernel-remover (3.0.3) unstable; urgency=low
+
+  * switch to compat level 8.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 08 Aug 2010 04:46:45 +0200
+
+kernel-remover (3.0.2) unstable; urgency=low
+
+  * bump standards version to 3.9.1, no changes necessary.
+  * rename package to kernel-remover, all other functionality has been dropped
+    ages ago.
+  * elaborate long description a bit further, to make lintian happy.
+  * regenerate icons.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 04 Aug 2010 03:49:26 +0200
+
+sidux-kernelhacking (3.0.1) unstable; urgency=low
+
+  * bump standards version to 3.8.4, no changes necessary.
+  * refresh generated icons.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 26 Apr 2010 01:17:37 +0200
+
+sidux-kernelhacking (3.0.0) unstable; urgency=low
+
+  * drop /usr/src/Makefile, it no longer fullfils its need.
+  * drop long obsolete cdbs.
+  * switch to "3.0 (native)".
+  * adapt the package description.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 26 Nov 2009 15:06:14 +0100
+
+sidux-kernelhacking (2.6.31.1) unstable; urgency=low
+
+  * bump standards version to 3.8.3, no changes necessary.
+  * drop cdbs from build-depends, it's not needed anymore.
+  * add gettext-base to dependencies, kernel-remover requires it.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 02 Oct 2009 02:38:07 +0200
+
+sidux-kernelhacking (2.6.28.4) unstable; urgency=low
+
+  * when using su the DISPLAY can be set but root can not access it.
+    so we unset it
+
+ -- Joaquim Boura <x-un-i@berlios.de>  Fri, 25 Sep 2009 11:47:14 +0200
+
+sidux-kernelhacking (2.6.28.3) unstable; urgency=low
+
+  [ Bernard Gray ]
+  * update art for 2009-02
+  * vacuum defs for svg icon
+  * update copyright
+  * convert all bitmaps to new svg art
+  * ready for release
+
+  [ Stefan Lippers-Hollmann ]
+  * write new create-icons target.
+  * generate binary artwork.
+  * bump standards version to 3.8.2, no changes necessary.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 03 Jul 2009 00:04:59 +0200
+
+sidux-kernelhacking (2.6.28.2) unstable; urgency=low
+
+  * ssft is not loaded when using force. so do not use it. (thks ffws|hathe)
+
+ -- Joaquim Boura <x-un-i@berlios.de>  Tue, 03 Mar 2009 21:28:10 +0100
+
+sidux-kernelhacking (2.6.28.1) unstable; urgency=low
+
+  * fix groff syntax.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 20 Feb 2009 18:08:26 +0100
+
+sidux-kernelhacking (2.6.28.0) unstable; urgency=low
+
+  * fix desktop-entry-contains-encoding-key.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 20 Feb 2009 18:05:34 +0100
+
+sidux-kernelhacking (2.6.27.6) unstable; urgency=low
+
+  * fixed  mispelling
+
+ -- Joaquim Boura <x-un-i@berlios.de>  Thu, 19 Feb 2009 22:54:22 +0100
+
+sidux-kernelhacking (2.6.27.5) unstable; urgency=low
+
+  * make lintian happy and depend on ${misc:Depends}.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 08 Dec 2008 23:51:30 +0100
+
+sidux-kernelhacking (2.6.27.4) unstable; urgency=low
+
+  * fix 2>&1.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 17 Nov 2008 01:36:47 +0100
+
+sidux-kernelhacking (2.6.27.3) unstable; urgency=low
+
+  * when using su the DISPLAY variable remains in the environment but root
+    is not allowed to open windows in the display so unset it to allow
+    fallback to dialog
+
+ -- Joaquim Boura <x-un-i@berlios.de>  Sun, 16 Nov 2008 13:35:49 +0100
+
+sidux-kernelhacking (2.6.27.2) unstable; urgency=low
+
+  * Touch up kernel-source-ng.bash for change in bash regular expression
+    matching.
+
+ -- Kel Modderman <kel@otaku42.de>  Tue, 14 Oct 2008 07:45:50 +1000
+
+sidux-kernelhacking (2.6.27.1) unstable; urgency=low
+
+  * Remove a bit of old unused cruft from kernel-source-ng.bash.
+  * Make sure MODULE_LOC is exported.
+  * Run make-kpkg as fakeroot when invoked as user, to avoid differences
+    in its behaviour.
+  * Tweak modules targets
+
+ -- Kel Modderman <kel@otaku42.de>  Tue, 14 Oct 2008 07:29:58 +1000
+
+sidux-kernelhacking (2.6.27) unstable; urgency=low
+
+  * Use dh, build-depend on debhelper >= 7.
+  * Move kernelhacking Makefile to contrib/.
+  * Remove bashism'd make_po.sh script, replace with a Makefile.
+  * Add Makefile for icon creation, use standardized directory locations.
+  * Remove all old cruft associated with packing .deb's in zip files.
+  * Give src/Makefile some reworking, removing many targets that are now
+    less useful, and redifining existing targets to something more useful.
+  * Remove sidux-modules package.
+  * Move manual page to kernel-remover to top level.
+  * Recommend a working version of kernel-package.
+
+ -- Kel Modderman <kel@otaku42.de>  Tue, 14 Oct 2008 07:06:23 +1000
+
+sidux-kernelhacking (2.6.25.4) unstable; urgency=low
+
+  * bump standards version to 3.8.0, no changes necessary.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 08 Jun 2008 19:35:32 +0200
+
+sidux-kernelhacking (2.6.25.3) unstable; urgency=low
+
+  * do not include current kernel in the list of the offered kernels.
+
+ -- Joaquim Boura <x-un-i@berlios.de>  Tue, 13 May 2008 18:29:53 +0200
+
+sidux-kernelhacking (2.6.25.2) unstable; urgency=low
+
+  * fix metapackage spelling error.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 11 May 2008 22:04:19 +0200
+
+sidux-kernelhacking (2.6.25.1) unstable; urgency=low
+
+  [ Joaquim Boura ]
+  * do not ignore old style kernels
+
+  [ Stefan Lippers-Hollmann ]
+  * fix kernel-source-ng.bash use of wget.
+  * make build-kernel-modules POSIX compliant
+  * add x-un-i to uploaders.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 09 May 2008 13:56:17 +0200
+
+sidux-kernelhacking (2.6.25.0) unstable; urgency=low
+
+  * drop acer-acpi, merged upstream.
+  * drop kqemu, obsolete and broken.
+  * adapt dependencies for 2.6.25.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 28 Apr 2008 22:45:56 +0200
+
+sidux-kernelhacking (2.6.24.15) unstable; urgency=low
+
+  * kernel-remover: do not offer latest kernel if the metapackage is still
+    installed.
+
+ -- Joaquim Boura <x-un-i@berlios.de>  Wed, 09 Apr 2008 11:02:05 +0200
+
+sidux-kernelhacking (2.6.24.14) unstable; urgency=low
+
+  * drop lzma-source.
+  * add r5u870-source.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 31 Mar 2008 14:46:07 +0200
+
+sidux-kernelhacking (2.6.24.13) unstable; urgency=low
+
+  [ Joaquim Boura ]
+  * moved the setting from some vars into the prepare section. When the
+    frontend is "dialog" pad the kernel string to turn the list readable.
+    Fixed language messages an created generic pot file.
+  * man page for kernel-remover
+
+  [ Stefan Lippers-Hollmann ]
+  *  fix manpage installation.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 31 Mar 2008 03:12:38 +0200
+
+sidux-kernelhacking (2.6.24.12) unstable; urgency=low
+
+  * fix logic error in yesno().
+  * remove unset games.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 27 Mar 2008 14:10:25 +0100
+
+sidux-kernelhacking (2.6.24.11) unstable; urgency=low
+
+  * fix further bashisms (push/ popd).
+  * and remove reliance on SUSv3 exceptions granted by Debian policy 10.4.
+  * properly escape awk options.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 27 Mar 2008 14:01:40 +0100
+
+sidux-kernelhacking (2.6.24.10) unstable; urgency=low
+
+  * fix regexp parsing of given kernel names.
+  * only try to remove linux-headers-commom-$KVER linux-support-$KVER if
+    installed.
+  * remove bashisms, make kernel-remover a pure SUSv3 script.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 27 Mar 2008 13:36:46 +0100
+
+sidux-kernelhacking (2.6.24.9) unstable; urgency=low
+
+  [ Joaquim Boura ]
+  * fixed removing kernel for higher revisions than 10
+
+  [ Stefan Lippers-Hollmann ]
+  * merge awk invocations into one.
+  * remove linux-support-$VER as well.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 26 Mar 2008 00:45:50 +0100
+
+sidux-kernelhacking (2.6.24.8) unstable; urgency=low
+
+  * add -n switch to create bare kernel-*.zip assemblies without any modules
+    but just templates.
+  * ndiswrapper now builds as part of linux-modules-sidux-main-2.6, thanks to
+    kelmo.
+  * don't mention no longer provided module packages in transitional/README.
+  * acerhk is now in debian proper, drop the versioned dependency on no longer
+    existing debian revision.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 04 Mar 2008 03:01:45 +0100
+
+sidux-kernelhacking (2.6.24.7) unstable; urgency=low
+
+  * no custom workaround for ndiswrapper.
+  * revert to full modules.list, it's still great for rapid prototyping.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 21 Feb 2008 22:33:35 +0100
+
+sidux-kernelhacking (2.6.24.6) unstable; urgency=low
+
+  * drop all modules but ndiswrapper, they are built by
+    linux-modules-sidux-main-2.6 now.
+  * quick hack to list new style module package in README.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 21 Feb 2008 22:15:35 +0100
+
+sidux-kernelhacking (2.6.24.5) unstable; urgency=low
+
+  * ease up transition.
+  * appease lintian and write (C) as © in debian/copyright.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 21 Feb 2008 01:08:44 +0100
+
+sidux-kernelhacking (2.6.24.4) unstable; urgency=low
+
+  * fixed mispelling of var
+
+ -- Joaquim Boura <x-un-i@berlios.de>  Sun, 17 Feb 2008 01:12:20 +0100
+
+sidux-kernelhacking (2.6.24.3) unstable; urgency=low
+
+  [ Stefan Lippers-Hollmann ]
+  * make install-kernel-sidux.sh arch independent.
+  * remove bashisms.
+  * add kernel-*.zip functionality.
+  * don't claim to support what isn't supported anymore.
+  * talk about the new metapackages for linux-image and linux-headers.
+
+  [ Joaquim Boura ]
+  * some debs where not removed. fixing that.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 17 Feb 2008 00:20:22 +0100
+
+sidux-kernelhacking (2.6.24.2) unstable; urgency=low
+
+  [ Stefan Lippers-Hollmann ]
+  * et131x has been fixed, no need to to any clean-ups anymore.
+  * add temporary build-kernel-modules, but don't install it.
+  * don't rm default links in /boot/ prematurely.
+  * fix bashisms in new link logic.
+  * hack up a transitional install-kernel-sidux.sh for debianized kernels.
+  * try to recover from failing module installs.
+  * ensure to call modinfo with full path names.
+  * move temporary files to transitional/.
+  * add a README for transitional cases.
+  * explain why we don't need to bother about install failures of external
+    modules yet.
+  * add CVE numbers.
+  * the arch mapping isn't consistent.
+  * quick'n'dirty syntax fix.
+  * kernel 2.6.23 is obsolete.
+
+  [ Joaquim Boura ]
+  * use ssft_frontend "text" when neither zenity nor dialog are installed.
+
+ -- Joaquim Boura <x-un-i@berlios.de>  Tue, 12 Feb 2008 22:32:30 +0100
+
+sidux-kernelhacking (2.6.24.1) unstable; urgency=low
+
+  [ Stefan Lippers-Hollmann ]
+  * move 2.6.23 kernel configs to deprecated.
+  * declare 2.6.24 as stable.
+  * apply important bugfixes for b43 and hid-input.
+  * add similar patches to fix b43legacy as well.
+  * add dvb-cx23885-add-missing-subsystem-id-for-hauppauge-hvr1800-retail.
+  * update unionfs to 2.2.3.
+  * add b43_reject-new-firmware-early to 2.6.23 and 2.6.24.
+  * aufs (>= ) doesn't strictly need access to security_inode_permission()
+    anymore.
+  * bump minimum requirements for aufs-source to a version that works with
+    2.6.24 without symbol exports.
+  * depend on an official debian version of qc-usb-source which is 2.6.24
+    compatible.
+  * depend on lzma-source again, it's broken but required by debian's
+    squashfs...
+  * drop patches to be merged in 2.6.24.1(-rc1).
+
+  [ Kel Modderman ]
+  * scripts/install-kernel-sidux.sh:
+    - create symlinks for vmlinuz and initrd.img in / and /boot only if
+      already existing
+    - fix up m-a command to install madwifi for new kernel
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 07 Feb 2008 22:14:29 +0100
+
+sidux-kernelhacking (2.6.24.0) unstable; urgency=low
+
+  * update ipwireless_cs for 2.6.24 to 2.6.24-rc8-mm1.
+  * update nozomi for 2.6.24 to 2.6.24-rc8-mm1.
+  * refresh e1000_detected-tx-unit-hang for 2.6.24.
+  * update writeback_speed-up-writeback-of-big-dirty-files (iowait) for 2.6.24.
+  * drop e1000_detected-tx-unit-hang, merged upstream.
+  * drop writeback_speed-up-writeback-of-big-dirty-files, still under
+    investigation.
+  * revert back to procfs based powermanagement, hal and friends don't deal
+    properly with sysfs yet.
+  * move scripts from bin/* to $(CURDIR).
+  * add XDG desktop file and icon ressource for kernel-remover.
+  * drop mk_dpatch (dpatch-edit-patch is the better alternative).
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 25 Jan 2008 00:51:28 +0100
+
+sidux-kernelhacking (2.6.23.26) unstable; urgency=low
+
+  * suggest make for sidux-kernelhacking, it's highly optional.
+  * add e1000_detected-tx-unit-hang to 2.6.24.
+  * add iowait.diff to 2.6.24.
+  * update to debhelper compat 6.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 19 Jan 2008 02:33:41 +0100
+
+sidux-kernelhacking (2.6.23.25) unstable; urgency=low
+
+  [ Stefan Lippers-Hollmann ]
+  * 2.6.24-rc6_make_sysfs_optional has been merged upstream, drop it.
+  * 2.6.24-rc7-git2_wireless-updates has been merged upstream, drop it.
+  * update lirc to current upstream.
+  * drop rt2570-source, it's broken and rt2500usb is its replacement.
+
+  [ Kel Modderman ]
+  * scripts/install-kernel-sidux.sh:
+    - make damn sure dpkg --compare-versions is given correct number of
+      arguments
+    - install b43-fwcutter if bcm43xx-fwcutter (or firmware file present)
+      is installed and _not_ b43-fwcutter
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 16 Jan 2008 13:16:51 +0100
+
+sidux-kernelhacking (2.6.23.24) unstable; urgency=low
+
+  * update wireless pieces for 2.6.23 to 2.6.24 as of 2008-01-11.
+  * update rt2x00 to 2.0.14 for 2.6.23.13.
+  * update wireless pieces for 2.6.23 to staging 2.6.24 as of 2008-01-12.
+  * revert broken (rt61pci) rt2x00 2.0.14 to known good 2.0.13.
+  * update unionfs to 2.2.2.
+  * update rtl818x to wireless-2.6 v2.6.24-rc7-716-g62ec51e (200801102048).
+  * rt2x00: Correctly initialize rt2500usb MAC
+  * rt2x00: Put 802.11 data on 4 byte boundary
+  * rt2x00: Allow rt61 to catch up after a missing tx report
+  * we have neither X11 output nor any paramaters, remove it from the
+    su-to-root call.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 12 Jan 2008 02:30:28 +0100
+
+sidux-kernelhacking (2.6.23.23) unstable; urgency=low
+
+  * update unionfs to 2.2.
+  * update nozomi to 2.6.24-rc6-mm1.
+  * update ipwireless_cs to 2.6.24-rc6-mm1.
+  * add patch lists and default configs for rt2x00 and wireless-2.6/
+    everything.
+  * add http://bugzilla.kernel.org/attachment.cgi?id=14137&action=view as
+    2.6.24-rc6_make_sysfs_optional.patch.
+  * add sec_perm-2.6.24-gpl.patch to experimental line-ups.
+  * special rt2x00/ wireless-2.6 snapshots don't cope well with the sublevel
+    versioning, remove the experiments again.
+  * test 2.6.24's own rt2x00 implementation.
+  * update unionfs to 2.2.1.
+  * add experimental support for RealTek RTL8180L and RTL8185 wlan cards.
+  * remove su-me usage and recommend menu.
+  * depend on official acx100-source package version.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 08 Jan 2008 21:01:21 +0100
+
+sidux-kernelhacking (2.6.23.22) unstable; urgency=low
+
+  * install-kernel.sh: use modinfo to detect installed modules that come from
+    external module packages rather than detecting modules in use.
+
+ -- Kel Modderman <kel@otaku42.de>  Fri, 21 Dec 2007 11:06:15 +1000
+
+sidux-kernelhacking (2.6.23.21) unstable; urgency=low
+
+  * bump minimum requirements for acer-acpi and et131x (official upstream,
+    respectively debian, releases fixing kernel 2.6.24 compatibility).
+  * bump minimum requirements to a working virtualbox version.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 19 Dec 2007 12:52:39 +0100
+
+sidux-kernelhacking (2.6.23.20) unstable; urgency=low
+
+  [ Stefan Lippers-Hollmann ]
+  * remove patch-vbox-ose-modules-2.6.24, we have a proper virtualbox-ose
+    package now.
+  * update module dependencies for 2.6.24.
+  * build against sane et131x/ virtualbox-ose packages.
+  * update dependency on aufs to current debian update.update dependency on
+    aufs to current debian update.
+  * drop sec_perm-2.6.24.patch again.
+  * fix 2.6.23.10 merge conflicts.
+  * re-add sec_perm patch, restrict to GPL2 module only.
+  * lzma is broken crap, don't build it.
+  * virtualbox-ose-source is amd64/ i386 only (at least the compiled modules).
+  * depend on a squashfs-source version without broken lzma stuff.
+
+  [ Kel Modderman ]
+  * Enhance su-me usage, tell the user why they suddenly get prompted for a
+    passwd, and who's passwd they should be entering. Throw an error if the
+    exec-as-root routine fails.
+  * Cleanup modules.list
+    - don't keep arch specific comments, this won't scale
+    - mark ndiswrapper as amd64 + i386 only
+    - fix formatting errors
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 14 Dec 2007 03:28:09 +0100
+
+sidux-kernelhacking (2.6.23.19) unstable; urgency=low
+
+  * allow aufs to work on 2.6.24 with CONFIG_SECURITY=y.
+  * add hack to allow building virtualbox-ose modules against kernel 2.6.24.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 11 Dec 2007 14:26:19 +0100
+
+sidux-kernelhacking (2.6.23.18) unstable; urgency=low
+
+  * add dsdt patches to 2.6.24 line-up.
+  * add nozomi and ipw_wireless patches to 2.6.24 line-up.
+  * switch vfat defaults to utf8 for 2.6.24.
+  * add at76_usb to 2.6.24 line-up.
+  * add rt2x00 2.0.13 to the 2.6.24 line-up.
+  * add lirc to the 2.6.24 line-up.
+  * commit starting configs for 2.6.24-rc4-git5-slh64-smp-1 and
+    2.6.24-rc4-git5-slh-smp-1.
+  * CONFIG_PARAVIRT_GUEST breaks kernel-package, disable it for the time
+    being.
+  * update unionfs to 2.1.11.
+  * add lzma-source, which has become an undeclared strict dependency of
+    squashfs(-source).
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 10 Dec 2007 02:21:03 +0100
+
+sidux-kernelhacking (2.6.23.17) unstable; urgency=low
+
+  * some b43 related debugging.
+  * compile fixes.
+  * update wireless bits to 2.6.23.9-80.fc8.
+  * revert b43/ b43legacy to 2.6.24.
+  * try to recover from aborting dpkg -i linux-image-$VER.
+  * refuse to install a kernel, if /boot/vmlinuz-$VER already exists.
+  * revert wireless-2.6 to 2.6.24 due to issues with mac80211/ 2.6.25 and b43/
+    b43legacy.
+  * add at76_usb.
+  * update rt2x00 to 2.0.13.
+  * API forward porting for rt2x00.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 07 Dec 2007 01:38:27 +0100
+
+sidux-kernelhacking (2.6.23.16) unstable; urgency=low
+
+  * Improve sidux-modules substvars injection, comment modules.list
+    accordingly.
+  * Call gawk explicitly in unp-kernel-modules.
+  * Don't test for existance of /usr/src/Makefile, we provide it.
+  * General cleanup of source package
+    - put scripts into bin/ subdir
+    - use debian/tmp to generate sidux-modules from modules.list rather than
+      needing to cleanup package area
+  * Remove useless use of redirection in scripts/install-kernel-sidux.sh to
+    fix detection of udev-config-sidux and sidux-scripts package versions.
+  * Redo madwifi in scripts/install-kernel-sidux.sh on kernel upgrade when
+    module is currently in use and madwifi-source package has been installed
+    and used before.
+
+ -- Kel Modderman <kel@otaku42.de>  Thu, 06 Dec 2007 16:51:06 +1000
+
+sidux-kernelhacking (2.6.23.15) unstable; urgency=low
+
+  * Use debian/sidux-modules.substvars to generate better dependencies for an
+    arch specific sidux-modules package.
+
+ -- Kel Modderman <kel@otaku42.de>  Thu, 06 Dec 2007 08:47:45 +1000
+
+sidux-kernelhacking (2.6.23.14) unstable; urgency=low
+
+  [ Kel Modderman ]
+  * Check the currently running variant of vboxdrv is OSE before adding it to
+    list of EXTRA_DEBS to be installed along with new linux-image et al.
+  * Just avoid vboxdrv installation alltogether.
+
+  [ Stefan Lippers-Hollmann ]
+  * try to detect virtualbox-ose, not perfect but shouldn't pose false
+    positives.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 05 Dec 2007 14:41:18 +0100
+
+sidux-kernelhacking (2.6.23.13) unstable; urgency=low
+
+  * make_driver and fstab2uuid not used, and not likely to be. Purged.
+  * Fold awk into unp-kernel-modules script.
+
+ -- Kel Modderman <kel@otaku42.de>  Tue, 04 Dec 2007 23:34:29 +1000
+
+sidux-kernelhacking (2.6.23.12) unstable; urgency=low
+
+  [ Stefan Lippers-Hollmann ]
+  * update to Standards-Version 3.7.3, no changes necessary.
+  * update wireless to 2.6.23.9-77.fc8.
+  * update rt2x00 to 2.0.13.
+  * update ALSA to merge-3.
+  * libata/ IEEE1394/ netfilter/ e1000/ usb-storage fixes.
+
+  [ Kel Modderman ]
+  * Give scripts/install-kernel-sidux.sh some love:
+    - don't remove /etc/initramfs-tools/conf.d/resume
+    - create minimal /etc/kernel-img.conf if missing
+    - add extra checks for the dep of udev-config-sidux
+    - use a recent /usr/sbin/get-resume-partition to fix resume conf
+    - detect modules that are externally supplied for current local use, if
+      they are currently used add them to the list to be installed
+    - after invoking dpkg -i on the list to be installed, check return value
+      and run apt-get -f install if not equal to zero
+    - use update-initramfs and not mkinitramfs
+    - remove fglrx/radeon/agpgart hack, i think that was never employed in
+      sidux release, ever
+    - add a hint for people using madwifi drivers
+    - do not remove /var/lib/alsa/asound.state
+    - cleanup final message, hint the manual for more information on UUID and
+      LABEL usage
+
+ -- Kel Modderman <kel@otaku42.de>  Tue, 04 Dec 2007 16:02:18 +1000
+
+sidux-kernelhacking (2.6.23.11) unstable; urgency=low
+
+  [ Kel Modderman ]
+  * Make debian/control sidux-modules parser more robust, allowing multi-line
+    depends fields.
+  * Pass DEB_BUILD_ARCH variable to awk script.
+
+  [ Stefan Lippers-Hollmann ]
+  * return to multi-line depends/ recommends.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 27 Nov 2007 02:02:28 +0100
+
+sidux-kernelhacking (2.6.23.10) unstable; urgency=low
+
+  * fix dependencies.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 26 Nov 2007 21:34:03 +0100
+
+sidux-kernelhacking (2.6.23.9) unstable; urgency=low
+
+  * update unionfs to 2.1.10.
+  * update wireless to 2.6.23.8-63.fc8.
+  * update rt2x00 to 2.0.12+git-9515-ga3e7e68.
+  * revert to single line dependencies, unp-kernel-modules breaks otherwise.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 26 Nov 2007 20:21:26 +0100
+
+sidux-kernelhacking (2.6.23.8) unstable; urgency=low
+
+  * prepare for 2.6.23.9.
+  * add atl2-source to sidux-modules.
+  * employ dpkg's new feature to use multi-line depends.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 26 Nov 2007 03:52:51 +0100
+
+sidux-kernelhacking (2.6.23.7) unstable; urgency=low
+
+  * update wireless to 2.6.23.1-58.fc8.
+  * rediff rt2x00 2.0.12+git-9501-g9dab9ee against 2.6.23.1-58.fc8.
+  * virtualbox-ose-guest-source is broken on amd64, only recommend it.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 17 Nov 2007 17:24:09 +0100
+
+sidux-kernelhacking (2.6.23.6) unstable; urgency=low
+
+  * radeon: set the address to access the GART table on the CPU side
+    correctly.
+  * update wireless-2.6 to 49.fc8.
+  * update rt2x00 to cvs20071111 (git is broken).
+  * update unionfs 2.1.9.
+  * update wireless to 2.6.23.1-53.wl.1.
+  * import 2.6.23.2-rc1.
+  * import 2.6.23.3-rc1.
+  * import 2.6.23.4-rc1.
+  * import 2.6.23.5-rc1.
+  * import 2.6.23.6-rc1.
+  * import 2.6.23.7-rc1.
+  * add several ALSA quriks for hda and friends.
+  * kill stupid input messages.
+  * add additional ALPS IDs.
+  * add additional Wacom IDs.
+  * update rt2x00 to 2.0.12+git-8649-g39e0501.
+  * add 2.6.23.4-rc1_tcp_fix-size-calculation-in-sk_stream_alloc_pskb.diff.
+  * update wireless to 2.6.23.1-56.fc8.
+  * update rt2x00 to 2.0.12+git-9501-g9dab9ee.
+  * update Sundance IP1000A driver.
+  * fix compilation of 2.6.23.1-56.fc8.
+  * raise minimum required version of virtualbox, to fetch new style
+    packaging.
+  * depend on virtualbox-ose-guest-source.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 17 Nov 2007 14:51:04 +0100
+
+sidux-kernelhacking (2.6.23.5) unstable; urgency=low
+
+  * update to unionfs 2.1.8.
+  * add empty stub for 2.6.24.
+  * remove highres timers, which have proven itself to be problematic on some
+    i686 systems.
+  * update wireless to 2.6.23.1-42.wl.2.
+  * update rt2x00 to 2.0.12+gitv2.6.23-rc3-8647-g130dd8f.
+  * add experimental support for RealTek RTL8185 wlan cards.
+  * drop external modules for RaLink cards as being obsoleted by in-kernel
+    rt2x00, as suggested by http://sidux.com/PNphpBB2-viewtopic-t-6679.html:
+    - rt2400-source
+    - rt2500-source
+    - rt61-source
+    - rt73-legacy-source
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 05 Nov 2007 15:03:51 +0100
+
+sidux-kernelhacking (2.6.23.4) unstable; urgency=low
+
+  * Disable polling before registering netdevice in e100.
+  * Testing current wireless bits from upstream.
+  * update unionfs to 2.1.7.
+  * quiet mac80211 decryption noise when frames may not be for us.
+  * update ALSA to 1.0.15.
+  * update wireless.
+  * add iwlwifi-irq-fix.
+  * update rt2x00 to 2.0.12.
+  * display PHY info for rt2x00.
+  * further updates for iwlwifi and rt2x00.
+  * remove macbuf dependency.
+  * make kernel remover pattern matching stricter.
+  * small grammar fixes.
+  * Recommend omnibook-source (i386 only).
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 27 Oct 2007 23:54:38 +0200
+
+sidux-kernelhacking (2.6.23.3) unstable; urgency=low
+
+  * add highres timer patches.
+  * enable classic pre-Juju IEEE1394 stack for stable kernels again.
+  * enable NO_HZ for amd64.
+  * add patches to fix i915 related crashes.
+  * add patch to fix e1000 EEPROM corruption issues.
+  * add patch to fix zd1211rw related kernel oops.
+  * update high resolution timer patches to hrt3.
+  * update wireless.
+  * update ath5k.
+  * numerous e1000e fixes.
+  * add thinkpad key support.
+  * fix cputime accounting.
+  * fix Huawei e220 initialization.
+  * fix esp-scsi.
+  * fir zd1201.
+  * add lirc 0.8.2-current support.
+  * the lirc-module-source packaging is seriously out of sync, use a kernel
+    patch for the time being.
+  * insane hack to unp-kernel-modules to prevent et131x from modpring in
+    chroot.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 19 Oct 2007 00:05:07 +0200
+
+sidux-kernelhacking (2.6.23.2) unstable; urgency=low
+
+  * update wireless base.
+  * allow scanning for hidden SSIDs using nm.
+  * add e1000e.
+  * update at76_usb.
+  * make sure to update udev-config-sidux.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 14 Oct 2007 13:39:41 +0200
+
+sidux-kernelhacking (2.6.23.1) unstable; urgency=low
+
+  * disable kernel based IRQ balance.
+  * kernel 2.6.22 is in deep feature freeze now, consider it deprecated for
+    ongoing development.
+  * kernel 2.6.22 is very close to being released, declare it the new stable
+    now.
+  * kernel 2.6.22 is history as of now.
+  * move ALi back to blkdev.
+  * branch of experimental configs for 2.6.24 (ALi using pata_ali, VIA isung
+    pata_via - this must be fixed upstream!).
+  * increase minimum version requirement for rt2570.
+  * update T-Sinux 111card patch with wireless-2.6.
+  * properly hide error messages if bcm43xx-fwcutter is not installed.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 11 Oct 2007 15:10:32 +0200
+
+sidux-kernelhacking (2.6.23.0) unstable; urgency=low
+
+  * update unionfs to 2.1.6.
+  * update experimental default config for amd64 to 2.6.23-rc8-git4-slh64-smp-2
+  * update experimental default config for i686 to 2.6.23-rc8-git4-slh-smp-2
+  * enable AX25_DAMA_SLAVE.
+  * update wireless/ mac80211 patches.
+  * fix conflicts with current -git.
+  * update experimental default config for amd64 to
+    2.6.23-rc9-git2-slh64-smp-1.
+  * update experimental default config for i686 to 2.6.23-rc9-git2-slh-smp-1.
+  * update wireless/ mac80211 patches.
+  * update experimental default config for i686 to 2.6.23-rc9-git3-slh-smp-1.
+  * update experimental default config for amd64 to
+    2.6.23-rc9-git3-slh64-smp-1.
+  * update syntax for Vcs headers in debian/control
+  * fix lower version requirements for kernel 2.6.23.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 08 Oct 2007 11:10:39 +0200
+
+sidux-kernelhacking (2.6.22.20) unstable; urgency=low
+
+  * update stable default config for i686 to 2.6.22.8-rc1-slh-smp-1.
+  * update stable default config for amd64 to 2.6.22.8-rc1-slh64-smp-1.
+  * prefer new firewire stack.
+  * update stable default config for amd64 to 2.6.22.8-slh64-smp-1.
+  * update stable default config for i686 to 2.6.22.8-slh-smp-1.
+  * update experimental default config for amd64 to 2.6.23-rc8-slh64-smp-1.
+  * update experimental default config for i686 to 2.6.23-rc8-slh-smp-1.
+  * pata_ali is supposed to work now.
+  * update unionfs to 2.1.5.
+  * current wireless-2.6 is a desaster, go with Fedor 8 for now.
+  * Arr Matey! A Hairy Bilge Rat!
+  * update experimental default config for i686 to 2.6.23-rc8-git2-slh-smp-1.
+  * update experimental default config for amd64 to 2.6.23-rc8-git2-slh64-smp-1.
+  * unionfs 2.1.5 for kernel 2.6.23-rc8 is busted in too many ways to even
+    bother.
+  * add ip1000a again.
+  * update experimental default config for amd64 to 2.6.23-rc8-git3-slh64-smp-1.
+  * update experimental default config for i686 to 2.6.23-rc8-git3-slh-smp-1.
+  * disable BCM43XX for kernel 2.6.23, B43 to the rescue.
+  * update experimental default config for i686 to 2.6.23-rc8-git4-slh-smp-1.
+  * update experimental default config for amd64 to 2.6.23-rc8-git4-slh64-smp-1.
+  * handle the bcm43xx to b43/ b43legacy transition for kernel 2.6.23.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 30 Sep 2007 20:09:53 +0200
+
+sidux-kernelhacking (2.6.22.19) unstable; urgency=low
+
+  * update experimental default config for i686 to 2.6.23-rc6-git7-slh-smp-2.
+  * update experimental default config for amd64 to
+    2.6.23-rc6-git7-slh64-smp-2.
+  * update stable default config for amd64 to 2.6.22.6-slh64-smp-6.
+  * update stable default config for 686 to 2.6.22.6-slh-smp-6.
+  * update to unionfs 2.1.4.
+  * update rt2x00.
+  * install b43-fwcutter if bcm43xx-fwcutter is present.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 23 Sep 2007 21:26:36 +0200
+
+sidux-kernelhacking (2.6.22.18) unstable; urgency=low
+
+  * bump versioned dependency of lirc-modules-source to >= 0.8.1~sidux-0.7.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 18 Sep 2007 13:16:23 +0200
+
+sidux-kernelhacking (2.6.22.17) unstable; urgency=low
+
+  * add 2.6.23-rc6-git1_fix-hci_sock-build.diff.
+  * update experimental default config to 2.6.23-rc6-git1-slh-smp-1.
+  * update experimental default config to 2.6.23-rc6-git1-slh64-smp-1.
+  * re- add accidentally missing support for block devices.
+  * update experimental default config to 2.6.23-rc6-git1-slh-smp-2.
+  * update experimental default config to 2.6.23-rc6-git1-slh64-smp-2.
+  * UNION_FS_DEBUG is too noisy to be useful, disable it.
+  * update rt2x00.
+  * use official ip1000a patch.
+  * update experimental default config for i686 to 2.6.23-rc6-git7-slh-smp-1.
+  * update experimental default config for amd64 to
+    2.6.23-rc6-git7-slh64-smp-1.
+  * remove obsolete cruft:
+    - remove-all-kernels-completely
+    - remove-kernel-completely
+    - make-kernel-links
+  * finally update wireless-dev.
+  * overhaul install-kernel scripts.
+  * remove obsolete cruft:
+    - remove-kernel-sidux.sh, kernel-remover does a better job.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 18 Sep 2007 10:41:10 +0200
+
+sidux-kernelhacking (2.6.22.16) unstable; urgency=low
+
+  * update stable default config to 2.6.22.6-slh-smp-4.
+  * update stable default config to 2.6.22.6-slh64-smp-4.
+  * update experimental default config to 2.6.23-rc5-slh-smp-4.
+  * update experimental default config to 2.6.23-rc5-slh64-smp-4.
+  * update wireless-dev.git everything.
+  * update rt2x00.git master.
+  * update at76_usb master.
+  * update experimental kernel.
+  * update unionfs to 2.1.3.
+  * add support for IC Plus Sundance IP1000A ethernet device.
+  * update experimental default config for amd64 to 2.6.23-rc6-slh64-smp-1,
+    disable the old firewire stack.
+  * update experimental default config for i686 to 2.6.23-rc6-slh-smp-1,
+    disable the old firewire stack.
+  * add VCS control headers.
+  * hard depend on a kernel 2.6.23 compatible aufs.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 12 Sep 2007 13:43:59 +0200
+
+sidux-kernelhacking (2.6.22.15) unstable; urgency=low
+
+  * revert to using blkdev for VIA and ALi.
+  * tighten squashfs-source dependency for 2.6.23 compatibility.
+  * remove bogus conflicts.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 04 Sep 2007 00:44:36 +0200
+
+sidux-kernelhacking (2.6.22.14) unstable; urgency=low
+
+  * update experimental default config to 2.6.23-rc5-slh64-smp-3.
+  * update experimental default config to 2.6.23-rc5-slh-smp-3.
+  * virtualbox-source --> virtualbox-ose-source, thanks to the quick
+    ftpmaster :)
+  * conflict with virtualbox-source durin the transition period.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 03 Sep 2007 21:21:56 +0200
+
+sidux-kernelhacking (2.6.22.13) unstable; urgency=low
+
+  * add experimental default config for 2.6.23-rc3-git10-slh64-smp-1.
+  * add experimental default config for 2.6.23-rc3-git10-slh-smp-1.
+  * update wireless-dev/ everything.
+  * update rt2x00.
+  * add unionfs 2.1.2 to 2.6.23.
+  * upload unionfs to our server, upstream's SERVFAILs.
+  * add legacy ACPI representation in procfs.
+  * update default config for 2.6.23-rc4-slh64-smp-1.
+  * update default config for 2.6.23-rc4-slh-smp-1.
+  * fix WEP RX for rt2x00.
+  * update default config for 2.6.23-rc4-slh-smp-2.
+  * update default config for 2.6.23-rc4-slh64-smp-2.
+  * update stable default config for 2.6.22.6-slh-smp-1.
+  * update stable default config for 2.6.22.6-slh64-smp-1.
+  * add copyright header to kernel-source-ng.
+  * add -u parameter to kernel-source-ng, which omits local patches and
+    creates a pure vanilla kernel tree (usefull for diff'ing).
+  * fix kernel panic in 2.6.23-rc5.
+  * add virtualbox-source to standard external modules.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 03 Sep 2007 17:55:00 +0200
+
+sidux-kernelhacking (2.6.22.12) unstable; urgency=low
+
+  * update config for 2.6.22.3-slh64-smp-1
+  * update config for 2.6.22.3-slh-smp-1
+  * update unionfs to 2.1.1.
+  * remove sky2 hotfixes, merged upstream (-stable).
+  * update unionfs to 2.1.2.
+  * update default config for 2.6.22.5-slh64-smp-1.
+  * update default config for 2.6.22.5-slh-smp-1.
+  * update default config for 2.6.22.6-rc1-slh64-smp-1.
+  * update default config for 2.6.22.6-rc1-slh-smp-1.
+  * add UW2453 RF support for zd1211rw.
+  * switch to debian's acx100-source, now it has a new maintainer.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 27 Aug 2007 11:24:59 +0200
+
+sidux-kernelhacking (2.6.22.11) unstable; urgency=low
+
+  * update iwlwifi to 1.0.0-1.
+  * update rt2x00 to 2.0.6+git20070810.
+  * update at76_usb to 0.16+git20070810.
+  * add 2.6.22.2_ata_piix-update-map-10b-for-ich8m.diff.
+  * add 2.6.22.2_fix-oops-in-__audit_signal_info.diff.
+  * add 2.6.22.2_softmac-fix-deadlock-of-wx_set_essid-with-assoc-work.diff.
+  * add 2.6.22.2_random-fix-bound-check-ordering.diff.
+  * update default config for 2.6.22.2-slh64-smp-1.
+  * update default config for 2.6.22.2-slh-smp-1.
+  * ship our own squashfs patch again, debian's external package is broken.
+  * update for 2.6.22.3-rc1.
+  * bump dependency on squashfs-source.
+  * drop squashfs patch.
+  * update default config for 2.6.22.3-rc1-slh64-smp-1.
+  * update default config for 2.6.22.3-rc1-slh-smp-1.
+  * bump aufs-source to >=0+20070812-0+c0.sidux.1.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 15 Aug 2007 01:14:15 +0200
+
+sidux-kernelhacking (2.6.22.10) unstable; urgency=low
+
+  * update unionfs 2.x to 2.6.22.1-u4.
+  * update at76_usb.
+  * update iwlwifi to 0.1.8, disable 802.11n as it would require significant
+    mac80211 changes and affects its API.
+  * update rt2x00 to 1.0.6 (+git20060804), fix API differences im mac80211.
+  * update default config for 2.6.22.1-slh-smp-12.
+  * update default config for 2.6.22.1-slh64-smp-12.
+  * update unionfs to 2.1.
+  * drop aacraid security fix as it is included in 2.6.22.2.
+  * switch to external squashfs again.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 09 Aug 2007 01:57:40 +0200
+
+sidux-kernelhacking (2.6.22.9) unstable; urgency=low
+
+  * revert to working wireless patchset.
+  * add et131x-source, thanks to Kel's patches.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 01 Aug 2007 14:53:05 +0200
+
+sidux-kernelhacking (2.6.22.8) unstable; urgency=low
+
+  [ Stefan Lippers-Hollmann ]
+  * update unionfs patches for 2.6.22.
+  * drop 2.6.21 patches.
+  * move Kel's active patches to sidux.com.
+  * Update 2.6.22 patch series:
+    - update at76_usb.
+    - add rt2x00.
+    - add sky2 workarounds.
+  * Update config for 2.6.22.1-slh64-smp-5.
+  * Update config for 2.6.22.1-slh-smp-5.
+  * pull 0005-mac80211-remove-rtnl-locking-in-ieee80211_sta.c.patch to our
+    server.
+  * move 2.6.22.1-iwlwifi-0.1.2-patch_kernel.patch.gz to our server.
+  * update to unionfs 2.x 2.6.22.1-u2.
+  * Update config for 2.6.22.1-slh64-smp-6.
+  * Update config for 2.6.22.1-slh-smp-6.
+  * update unionfs to 2.6.22.1-u3.
+  * fix reference leak in mac80211.
+  * add workaround to make scanners work with old udev versions (0.105).
+  * Update config for 2.6.22.1-slh64-smp-7.
+  * Update config for 2.6.22.1-slh-smp-7.
+  * add rt73-legacy-source to dependencies even though it doesn't work yet.
+  * update/ add mac80211 based amd8211/ rtl8187 based drivers from
+    wireless-dev 20070731.
+  * update/ add rt2x00 2.0.4+20070731 from rt2x00.git.
+  * update/ add iwlwifi 0.1.6.
+
+  [ Kel Modderman ]
+  * contrib/kernel-source-ng.bash:
+    - append one large PATCH array with all our custom patches as elements,
+      rather than individual appendage
+    - slice the first 3 characters of $USER when using the lazy naming scheme
+    - export LC_ALL=C LANG=C to remove chance of language influence
+    - a c,n,r and x cli options
+    - always include a name and revision in KERNEL string
+    - special case slh "lazy" stuff where cpu and arch strings are mangled
+      into KERNEL string for official release
+    - remove redirects from patch_it()
+    - make apply_patches() smarter, process patch(1) return codes better,
+      detect case where patch needs different patch level. show patch output
+      on hunk application error
+    - make color_foo variables one letter long
+    - add verbosity
+    - simplify finger_latest_kernel()
+    - stronger sanity checking of KERNEL string input
+    - trim the kernel string regexp's
+    - trim redundant bash regexp rematch variable assignments
+    - really get rid of NAM, DEF_CPU and REV
+    - remove need to use "latest-" before stable|prepatch|snapshot|mm kernel
+      version keywords.
+    - fix KERNEL sanity check
+    - add help section
+    - put the kernel version regular expression in a variable for easy future
+      maintenance
+    - remove extra escape slashes, that are not needed for finger_banner
+      lookup
+    - pass fakeroot to dpkg-buildpackage's -r cli option
+  * Update 2.6.22 patch series:
+    - drop wireless-dev snapshot
+    - rebase rtl8187.patch
+    - add 2.6.22_softmac-set-essid-state-fix.patch
+    - add 0001-mac80211-Add-support-for-SIOCGIWRATE-ioctl-to-pro.patch
+    - add 0002-mac80211-Set-low-initial-rate-in-rc80211_simple.patch
+    - add intel hack patch, 2.6.22.1-iwlwifi-0.1.1-patch_kernel.patch.gz
+    - add snapshot alternative for iwlwifi hack patch_kernel attempt.
+    - add backwards compat compile fix for iwlwifi hack(s)
+  * Hotfix: match KEV for EXTRAVERSION hack.
+  * Don't bail out in wget loop on failure, before reporting failure.
+  * More patch updates:
+    - bump iwlwifi to 0.0.42 snapshot
+    - get mac80211 sta excess lock removal bugfix
+  * Update iwlwifi from 0.0.42 -> 0.1.2
+  * mk_dpatch: use dpatch patch-template, drop env var guessing.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 31 Jul 2007 17:14:47 +0200
+
+sidux-kernelhacking (2.6.22.7) unstable; urgency=low
+
+  * add 2.6.22_cfg80211_netdev_security.diff.
+  * fix probing for dpkg-buildpackage.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 11 Jul 2007 02:13:38 +0200
+
+sidux-kernelhacking (2.6.22.6) unstable; urgency=low
+
+  * add actual check for cdbs.
+  * add Recommends/ Suggests for linux-custom-patches-$(uname -r).
+  * update to kernel 2.6.22.1.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 11 Jul 2007 01:22:12 +0200
+
+sidux-kernelhacking (2.6.22.5) unstable; urgency=low
+
+  * fix thinko.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 10 Jul 2007 03:50:32 +0200
+
+sidux-kernelhacking (2.6.22.4) unstable; urgency=low
+
+  [ Kel Modderman ]
+  * unp-kernel-modules: rename variable to something more distro-agnostic.
+
+  [ Stefan Lippers-Hollmann ]
+  * make kernel-source-ng.bash more robust.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 10 Jul 2007 02:40:25 +0200
+
+sidux-kernelhacking (2.6.22.3) unstable; urgency=low
+
+  * remove et131x-source again, it's broken (2.6.22).
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 07 Jul 2007 10:32:37 +0200
+
+sidux-kernelhacking (2.6.22.2) unstable; urgency=low
+
+  [ Kel Modderman ]
+  * Don't bail out on error in patch_it loop, this caused unexplained exit
+    from script when a plaintext patch that was used in construction of
+    previous kernels, but had been changed and now fails to apply.
+
+  [ Stefan Lippers-Hollmann ]
+  * drop linux-wlan-ng, its udev rules are ifup scripts create error messages
+    and serious issues for all system, while the hardware in question is
+    getting old and is usually better suited by ndiswrapper.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 06 Jul 2007 00:14:33 +0200
+
+sidux-kernelhacking (2.6.22.1) unstable; urgency=low
+
+  * Add et131x-source to sidux-modules depends. It at least compiles with
+    2.6.22 which allows oppurtunity to physically test before release.
+
+ -- Kel Modderman <kel@otaku42.de>  Wed, 04 Jul 2007 18:30:08 +1000
+
+sidux-kernelhacking (2.6.22.0) unstable; urgency=low
+
+  * remove /etc/initramfs-tools/conf.d/resume on install.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 27 Jun 2007 23:33:51 +0200
+
+sidux-kernelhacking (2.6.22) unstable; urgency=low
+
+  * move over to kernel 2.6.22.
+  * drop cloop, doesn't build yet.
+  * drop ivtv, merged mainline.
+  * drop squashfs, kernelpatch for the time being.
+  * adapt minimal dependencies.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 27 Jun 2007 02:05:52 +0200
+
+sidux-kernelhacking (2.6.21.3) unstable; urgency=low
+
+  * remove fstab2uuid, the transition period is over and automated changes to
+    the fstab more than just tricky.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 05 Jun 2007 14:56:33 +0200
+
+sidux-kernelhacking (2.6.21.2) unstable; urgency=low
+
+  * rt2x00 has not proven itself to be stable, activate legacy modules again:
+    - rt2400-source
+    - rt2500-source
+    - rt2570-source
+    - rt61-source
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 22 May 2007 14:32:46 +0200
+
+sidux-kernelhacking (2.6.21.1) unstable; urgency=low
+
+  * move over to mac80211, this drops the following drivers:
+    - ipw3945-source
+    - rt2400-source
+    - rt2500-source
+    - rt2570-source
+    - rt61-source
+  * bump ivtv-source and re- add it again.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 11 May 2007 14:50:48 +0200
+
+sidux-kernelhacking (2.6.21.0) unstable; urgency=low
+
+  * drop ivtv-source for the time being, as it doesn't compile against kernel
+    2.6.21.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 23 Apr 2007 21:40:29 +0200
+
+sidux-kernelhacking (2.6.20.16) unstable; urgency=low
+
+  * recommend kernel-package.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 17 Apr 2007 19:00:43 +0200
+
+sidux-kernelhacking (2.6.20.15) unstable; urgency=low
+
+  * no longer depend on unionfs-source, we're using it as kernel patch since
+    unionfs 1.x was abandoned upstream and is not self contained yet.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 14 Apr 2007 01:33:20 +0200
+
+sidux-kernelhacking (2.6.20.14) unstable; urgency=low
+
+  * drop btsco from dependencies, headsetd + alsa-lib plugin are supposed to
+    replace it (abandoned upstream).
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 05 Apr 2007 14:41:49 +0200
+
+sidux-kernelhacking (2.6.20.13) unstable; urgency=low
+
+  * remodel wildcards to match kernel-source-ng.bash.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 01 Apr 2007 13:12:42 +0200
+
+sidux-kernelhacking (2.6.20.12) unstable; urgency=low
+
+  * add ivtv-source (>= 0.10.1-1) again.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 01 Apr 2007 02:34:18 +0200
+
+sidux-kernelhacking (2.6.20.11) unstable; urgency=low
+
+  * Fix my maintainer email address.
+  * Remove spurious whitespace from awk script.
+
+ -- Kel Modderman <kel@otaku42.de>  Tue, 13 Mar 2007 11:14:24 +1000
+
+sidux-kernelhacking (2.6.20.10) unstable; urgency=low
+
+  * drop at76c503a-source for now and implement it as kernel patch, upstream
+    development is focussing on mainline integration and using git these days.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed,  7 Mar 2007 20:44:35 +0100
+
+sidux-kernelhacking (2.6.20.9) unstable; urgency=low
+
+  * kanotix-kernelhacking, kanotix-modules were never part of sidux or debian
+    sid, don't conflict with those.
+  * don't touch existing fstab, menu.lst variants anymore, every sidux ISO
+    used UUID based mounting and each kernel within the last 3 months shipped
+    it as well, needlessly modifying crucial user configurations is more
+    dangerous than the casual breakage for not UUID using systems.
+  * strip extension from fstab2uuid.pl and ship it as part of the kernel zip.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  1 Mar 2007 18:43:27 +0100
+
+sidux-kernelhacking (2.6.20.8) unstable; urgency=low
+
+  * we need to "read" the gettext otherwise we get an missing error
+
+ -- Joaquim Boura <x-un-i@berlios.de>  Sun, 25 Feb 2007 13:41:20 +0100
+
+sidux-kernelhacking (2.6.20.7) unstable; urgency=low
+
+  * add aufs-source for testing.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 25 Feb 2007 00:51:00 +0100
+
+sidux-kernelhacking (2.6.20.6) unstable; urgency=low
+
+  * missing " on newly code
+
+ -- Joaquim Boura <x-un-i@berlios.de>  Mon, 19 Feb 2007 19:59:16 +0100
+
+sidux-kernelhacking (2.6.20.5) unstable; urgency=low
+
+  * not documented option -x to be used when called by siduxcc.
+
+ -- Joaquim Boura <x-un-i@berlios.de>  Sat, 17 Feb 2007 23:06:56 +0100
+
+sidux-kernelhacking (2.6.20.4) unstable; urgency=low
+
+  [ Joaquim Boura ]
+  * fallback to dialog when zenity is not installed
+
+  [ Stefan Lippers-Hollmann ]
+  * we don't need remove-kernel-completely anymore.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 16 Feb 2007 22:59:35 +0100
+
+sidux-kernelhacking (2.6.20.3) unstable; urgency=low
+
+  * add kqemu-source, now it's GPL2.
+  * add fallback to kernel-remover for systems without dialog.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue,  6 Feb 2007 16:30:31 +0100
+
+sidux-kernelhacking (2.6.20.2) unstable; urgency=low
+
+  * 2.6.20 is default now, update and depend on:
+    - squashfs-source
+    - unionfs-source
+  * add kernel-$VER-custom-modules.zip to zip: target.
+  * add pack, pack-patches, pack-modules targets, rework zip: target.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon,  5 Feb 2007 22:03:00 +0100
+
+sidux-kernelhacking (2.6.20.1) unstable; urgency=low
+
+  * drop not yet 2.6.20 compatible modules for the time being:
+    - adm8211-source
+    - ivtv-source
+  * drop packages handled by kernel patches for now:
+    - squashfs-source
+    - unionfs-source
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon,  5 Feb 2007 00:33:45 +0100
+
+sidux-kernelhacking (2.6.19.13) unstable; urgency=low
+
+  * removed debug messages,
+  * update-the grub if some kernel is removed
+
+ -- Joaquim Boura <x-un-i@berlios.de>  Wed, 17 Jan 2007 22:46:57 +0100
+
+sidux-kernelhacking (2.6.19.12) unstable; urgency=low
+
+  * we do depend on ssft now.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 15 Jan 2007 21:55:00 +0100
+
+sidux-kernelhacking (2.6.19.11) unstable; urgency=low
+
+  * fixed typo
+
+ -- Joaquim Boura <x-un-i@berlios.de>  Mon, 15 Jan 2007 07:21:25 +0100
+
+sidux-kernelhacking (2.6.19.10) unstable; urgency=low
+
+  [ Joaquim Boura ]
+  * kernel-remover allow choice of kernels that should be removed
+  * removed script remove-all-kernels-completely
+  * give a message if user wants to use the frontend and ssft is not installed
+
+  [ Stefan Lippers-Hollmann ]
+  * fix up locale generation.
+  * move fstab2uuid.pl out of the way for now.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 14 Jan 2007 15:45:58 +0100
+
+sidux-kernelhacking (2.6.19.9) unstable; urgency=low
+
+  * use UUIDs in /etc/fstab.
+  * use UUIDs in /boot/grub/menu.lst.
+  * fix up inital draft, thank to x-un-i for testing.
+  * comment out not currently attached removable and optical media.
+  * add squashfs-source again, we ship our own svn snapshot.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 10 Jan 2007 22:47:26 +0100
+
+sidux-kernelhacking (2.6.19.8) unstable; urgency=low
+
+  * misdn breaks with 2.6.19, remove it again.
+  * add unionfs again, we ship our own svn snapshot.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun,  7 Jan 2007 02:40:08 +0100
+
+sidux-kernelhacking (2.6.19.7) unstable; urgency=low
+
+  * take care to set /etc/kernel-img.conf correctly.
+  * add misdn-source for now.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat,  6 Jan 2007 22:13:37 +0100
+
+sidux-kernelhacking (2.6.19.6) unstable; urgency=low
+
+  * fix bashisms in kernel install-/ remove scripts.
+  * refactor kernel install script.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 30 Dec 2006 19:12:37 +0100
+
+sidux-kernelhacking (2.6.19.5) unstable; urgency=low
+
+  * re- add rt61-source.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 10 Dec 2006 19:51:18 +0100
+
+sidux-kernelhacking (2.6.19.4) unstable; urgency=low
+
+  * we need an initrd for the time being.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 10 Dec 2006 16:10:57 +0100
+
+sidux-kernelhacking (2.6.19.3) unstable; urgency=low
+
+  * re- add rt2400-source.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 10 Dec 2006 16:04:36 +0100
+
+sidux-kernelhacking (2.6.19.2) unstable; urgency=low
+
+  * remove references to kbuild, not necessary anymore.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed,  6 Dec 2006 16:15:02 +0100
+
+sidux-kernelhacking (2.6.19.1) unstable; urgency=low
+
+  * re- add cloop-src.
+  * disable squashfs-source for now, kernel 2.6.18 is used for etch and
+    updating the squashfs-source packages would break compilation for etch.
+  * add minimum versions where really needed.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon,  4 Dec 2006 11:43:29 +0100
+
+sidux-kernelhacking (2.6.19.0) unstable; urgency=low
+
+  * first sidux release.
+  * remove the following external modules for now, they're still broken:
+    - cloop-src
+    - ibdriver-source
+    - rtl8180-sa2400-source
+    - unionfs-source
+    - rt2400-source
+    - rt61-source
+    - usbvision-source
+  * we don't need kanotix-su/ su-me.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 30 Nov 2006 00:07:21 +0100
+
+kanotix-kernelhacking (2.6.18.8) unstable; urgency=low
+
+  * fix-typo.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 21 Nov 2006 22:49:08 +0100
+
+kanotix-kernelhacking (2.6.18.7) unstable; urgency=low
+
+  * use gspca-source instead of spca5xx.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 21 Nov 2006 22:49:03 +0100
+
+kanotix-kernelhacking (2.6.18.6) unstable; urgency=low
+
+  * add support for %PATCH_LIST%.
+  * install linux-custom-patches.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 12 Nov 2006 16:06:19 +0100
+
+kanotix-kernelhacking (2.6.18.5) unstable; urgency=low
+
+  * re- add qc-usb, which has been fixed in the mean time.
+  * add fakeroot and dpkg-dev to Recommends.
+  * add initial packaging framework for linux-custom-patches.
+  * add gawk to kanotix-modules' depends.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 25 Oct 2006 14:46:30 +0200
+
+kanotix-kernelhacking (2.6.18.4) unstable; urgency=low
+
+  * add ibdriver-source.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 12 Oct 2006 01:37:19 +0200
+
+kanotix-kernelhacking (2.6.18.3) unstable; urgency=low
+
+  * drop r1000-source, we patch r8169 accordingly.
+  * change the Makefile for top STATIC_VERSION handling.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 12 Oct 2006 00:06:42 +0200
+
+kanotix-kernelhacking (2.6.18.2) unstable; urgency=low
+
+  * move package to main, which means removing dependencies on avm-source and
+    madwifi-source.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue,  3 Oct 2006 15:30:33 +0200
+
+kanotix-kernelhacking (2.6.18.1) unstable; urgency=low
+
+  * obsolete modules with kernel 2.6.18:
+    - pwc
+    - qc-usb-messenger
+    - zd1211
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 25 Sep 2006 18:30:23 +0200
+
+kanotix-kernelhacking (2.6.18) unstable; urgency=low
+
+  * drop the following modules for now:
+    - qc-usb
+    - shfs
+    - sqcam
+  * install gcc-4.1 instead of gcc-4.0 by using the install scripts.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 23 Sep 2006 00:25:36 +0200
+
+kanotix-kernelhacking (2.6.17.19) unstable; urgency=low
+
+  * Update kernel remove scripts.
+
+ -- Joerg Schirottke <master@kanotix.com>  Mon, 18 Sep 2006 00:03:41 +0200
+
+kanotix-kernelhacking (2.6.17.18) unstable; urgency=low
+
+  * Fix oldconfig Makefile target for 2.6.18+, when 'make oldconfig' is
+    essential before running a config UI.
+
+ -- Kel Modderman <kelrin@tpg.com.au>  Tue,  5 Sep 2006 10:55:53 +1000
+
+kanotix-kernelhacking (2.6.17.17) unstable; urgency=low
+
+  * grub has changed FHS again.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri,  1 Sep 2006 02:48:54 +0200
+
+kanotix-kernelhacking (2.6.17.16) unstable; urgency=low
+
+  * fix make-kernel-links.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri,  1 Sep 2006 01:40:42 +0200
+
+kanotix-kernelhacking (2.6.17.15) unstable; urgency=low
+
+  * re- add btsco-source.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 30 Aug 2006 23:00:18 +0200
+
+kanotix-kernelhacking (2.6.17.14) unstable; urgency=low
+
+  * re- add ivtv-source.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 26 Aug 2006 15:43:30 +0200
+
+kanotix-kernelhacking (2.6.17.13) unstable; urgency=low
+
+  * remove old symlinks first, so linux-image postinst updates menu.lst/ lilo
+    through /etc/kernel-img.conf's postinst hooks on its own.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 25 Aug 2006 11:37:57 +0200
+
+kanotix-kernelhacking (2.6.17.12) unstable; urgency=low
+
+  * don't link kernels anymore.
+  * remove obsolete scripts.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 24 Aug 2006 01:19:45 +0200
+
+kanotix-kernelhacking (2.6.17.11) unstable; urgency=low
+
+  * add cloop-src.
+  * add pwc-source.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 22 Aug 2006 15:46:16 +0200
+
+kanotix-kernelhacking (2.6.17.10) unstable; urgency=low
+
+  * add r1000-source.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 19 Aug 2006 01:18:07 +0200
+
+kanotix-kernelhacking (2.6.17.9) unstable; urgency=low
+
+  * set static kernel version in source scripts.
+  * support kernel-$VER-custom-patches.zip.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri,  4 Aug 2006 14:12:45 +0200
+
+kanotix-kernelhacking (2.6.17.8) unstable; urgency=low
+
+  * re- add adm8211-source.
+  * re- add zd1211-source.
+  * cloop-src has beedn fixed, add it again.
+  * test ivtv-source again.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  3 Aug 2006 02:01:08 +0200
+
+kanotix-kernelhacking (2.6.17.7) unstable; urgency=low
+
+  * linux-wlan-ng-source claims to support 2.6.17 now, lets test it.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 16 Jul 2006 01:39:29 +0200
+
+kanotix-kernelhacking (2.6.17.6) unstable; urgency=low
+
+  * kill off pwc, the in-kernel implementation has been reported working.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 15 Jul 2006 13:40:18 +0200
+
+kanotix-kernelhacking (2.6.17.5) unstable; urgency=low
+
+  * add:
+    - squashfs-source
+    - fsam7400-source
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 15 Jul 2006 12:38:13 +0200
+
+kanotix-kernelhacking (2.6.17.4) unstable; urgency=low
+
+  * fix ugly typo in dependencies.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon,  3 Jul 2006 16:27:59 +0200
+
+kanotix-kernelhacking (2.6.17.3) unstable; urgency=low
+
+  * remove broken module packages for the time being:
+    - cloop-src
+    - fsam7400-source
+    - ivtv-source
+    - linux-wlan-ng-source
+    - omnibook-source
+    - ppscsi-source
+    - ltmodem-source
+  * no longer needed, prefer in-kernel version:
+    - pwc-source
+    - qc-usb-messenger
+  * arch=any
+    - at76c503a-source
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon,  3 Jul 2006 10:39:56 +0200
+
+kanotix-kernelhacking (2.6.17.2) unstable; urgency=low
+
+  * Remove duplicate rt2500-source dep/rec.
+  * Improve kanotix-modules by creating a conffile at build time, and parsing
+    that when unpacking.
+
+ -- Kel Modderman <kelrin@tpg.com.au>  Mon, 19 Jun 2006 22:11:18 +1000
+
+kanotix-kernelhacking (2.6.17.1) unstable; urgency=low
+
+  * fix typo concerning ipw3945-source.
+  * re- add rt2500-source.
+  * remove adm80211 and zd1211 handled by kernelpatches.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 18 Jun 2006 18:39:24 +0200
+
+kanotix-kernelhacking (2.6.17.0) unstable; urgency=low
+
+  * Base on new linux release.
+  * Add usbvision, ipw3495 and rt61 modules.
+  * madwifi-ng => madwifi
+  * Bump Standards version.
+
+ -- Kel Modderman <kelrin@tpg.com.au>  Mon, 19 Jun 2006 00:17:00 +1000
+
+kanotix-kernelhacking (2.6.16.14) unstable; urgency=low
+
+  * /proc/config.gz doesn't necessarily exist.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 27 May 2006 01:08:32 +0200
+
+kanotix-kernelhacking (2.6.16.13) unstable; urgency=low
+
+  * change section to contrib/misc.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 24 May 2006 19:08:09 +0200
+
+kanotix-kernelhacking (2.6.16.12) unstable; urgency=low
+
+  * finally add lirc-modules-source again.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 18 May 2006 15:11:08 +0200
+
+kanotix-kernelhacking (2.6.16.11) unstable; urgency=low
+
+  * re- add linux-wlan-ng-source to dependencies.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue,  2 May 2006 01:43:09 +0200
+
+kanotix-kernelhacking (2.6.16.10) unstable; urgency=low
+
+  [ Kel Modderman ]
+  * Use PWD built-in in unp-kernel-modules.
+  * Don't quote shell command in Makefile.
+  * Split clean into two parts:
+    clean: for linux source
+    clean-modules: for external module packages
+    NB: It is clear that fakeroot is not used properly as the ROOTCMD when a user
+    attempts to clean the module packages.
+  * Add prep-kanotix-modules and kanotix-modules targets to Makefile.
+  * Make modules target depends on clean-modules.
+  * Use BASE_DIR as locational index for MODULE_LOC.
+  * Exclude shell scripts from compression in debian/rules.
+  * Don't link to /usr/src/Makefile in an essentially non-essential script ;-)
+
+  [ Stefan Lippers-Hollmann ]
+  * only delete kernel remains conditionally if vmlinuz-$KERNEL has already
+    been purged.
+  * re- add convenience hack to link Makefile to unp-kernel-modules.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 30 Apr 2006 12:45:25 +0200
+
+kanotix-kernelhacking (2.6.16.9) unstable; urgency=low
+
+  * The ugly hack, fix me before anyone starts looking, release.
+  * don't run modules_clean as user, this is necessary (so take care of that
+    manually --> clean sheets approach), but kernel-packages doesn't seem to
+    behave here.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 29 Apr 2006 19:38:32 +0200
+
+kanotix-kernelhacking (2.6.16.8) unstable; urgency=low
+
+  * fix zip target.
+  * try to fix module building.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 29 Apr 2006 17:14:47 +0200
+
+kanotix-kernelhacking (2.6.16.7) unstable; urgency=low
+
+  * use --rootcmd fakeroot for make-kpkg.
+  * minor clean up.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 29 Apr 2006 16:17:37 +0200
+
+kanotix-kernelhacking (2.6.16.6) unstable; urgency=low
+
+  * make Makefile compatible to pure user space.
+  * move unp-kernel-modules to /usr/bin instead of /usr/sbin/, we can build
+    kernels in userspace now.
+  * get install-kernel-kanotix.sh below 4096 byte, otherwise it will be
+    compressed by dh_installdocs.
+    - additionally move to /usr/share/kanotix-kernelhacking now.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 29 Apr 2006 14:35:05 +0200
+
+kanotix-kernelhacking (2.6.16.5) unstable; urgency=low
+
+  * include current kernel install scripts.
+  * switch to next generation unp-kernel-modules, thanks to kelmo - slightly
+    adapted.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 29 Apr 2006 00:12:02 +0200
+
+kanotix-kernelhacking (2.6.16.4) unstable; urgency=low
+
+  * add pwc-source to dependencies.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 25 Apr 2006 16:23:39 +0200
+
+kanotix-kernelhacking (2.6.16.3) unstable; urgency=low
+
+  * move to madwifi-ng instead of madwifi.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 25 Apr 2006 01:27:26 +0200
+
+kanotix-kernelhacking (2.6.16.2) unstable; urgency=low
+
+  * add shfs-source again.
+  * add zip target for kernel Makefile.
+  * add release target for kernel Makefile.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 19 Apr 2006 15:52:51 +0200
+
+kanotix-kernelhacking (2.6.16.1) unstable; urgency=low
+
+  * add avm-source again after the build problems have been fixed.
+  * zd1211-source pukes over dpkg-genchanges, but nevertheless builds the
+    binary packages.
+  * we build cloop externally from now on.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  6 Apr 2006 20:26:45 +0200
+
+kanotix-kernelhacking (2.6.16) unstable; urgency=low
+
+  * bump to 2.6.16.
+  * add sl-modem again.
+  * drop lufs-source.
+  * drop eagle-usb-source.
+  * the following drivers aren't compiling yet:
+    - avm-source
+    - ibdriver-source
+    - linux-wlan-ng-source
+    - shfs-source
+    - zd1211-source
+    - sl-modem-source
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon,  3 Apr 2006 22:30:57 +0200
+
+kanotix-kernelhacking (2.6.15.6) unstable; urgency=low
+
+  * remove sl-modem.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 26 Feb 2006 00:35:54 +0000
+
+kanotix-kernelhacking (2.6.15.5) unstable; urgency=low
+
+  * Bugfix: don't attempt to clean up modules in a directory that does not
+    exist. [unp-kernel-modules]
+
+ -- Kel Modderman <kelrin@tpg.com.au>  Sun, 15 Jan 2006 22:46:03 +1000
+
+kanotix-kernelhacking (2.6.15.4) unstable; urgency=low
+
+  * Drop btsco, its broken with current alsa
+  * Reinstate sl-modem, new upstream fixed it for linux (>=2.6.13)
+
+ -- Kel Modderman <kelrin@tpg.com.au>  Sun, 15 Jan 2006 01:13:19 +1000
+
+kanotix-kernelhacking (2.6.15.3) unstable; urgency=low
+
+  [ Kel Modderman ]
+  * Depend on zd1211-source and also include it in the amd64 module pool.
+
+ -- Kel Modderman <kelrin@tpg.com.au>  Sat, 14 Jan 2006 00:09:55 +1000
+
+kanotix-kernelhacking (2.6.15.2) unstable; urgency=low
+
+  [ Kel Modderman ]
+  * Add ivtv and sqcam
+  * Small tweak to unp-kernel-modules script
+
+  [ Stefan Lippers-Hollmann ]
+  * merge both branches.
+  * re- add linux-wlan-ng, the new upstream release is supposed to fix kernel
+    2.6.15 issues.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun,  8 Jan 2006 14:09:54 +0100
+
+kanotix-kernelhacking (2.6.15.1) unstable; urgency=low
+
+  * remove hostap-source, it is now usable as in kernel module.
+  * temporarily remove linux-wlan-ng as it is broken with 2.6.15.
+  * includes Kel Modderman's latest changes to unp-kernel-modules.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat,  7 Jan 2006 14:08:51 +0100
+
+kanotix-kernelhacking (2.6.14.9) unstable; urgency=low
+
+  * remove cdbs auto update feature.
+  * bump compat level to 5.
+  * really remove sl-modem.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 28 Dec 2005 11:31:17 +0100
+
+kanotix-kernelhacking (2.6.14.8) unstable; urgency=low
+
+  * Rewrote unp-kernel-modules
+    - now arch specific modules are handled correctly
+    - removed sl-modem (broken upstream)
+
+ -- Kel Modderman <kelrin@tpg.com.au>  Wed, 28 Dec 2005 00:33:37 +1000
+
+kanotix-kernelhacking (2.6.14.7) unstable; urgency=low
+
+  * define debian revision to get saner defaults.
+  * adapt make-kernel-links for linux-headers.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 10 Dec 2005 15:23:29 +0100
+
+kanotix-kernelhacking (2.6.14.6) unstable; urgency=low
+
+  * Add btsco; depend on btsco
+  * Fix typo in last changelog entry
+
+ -- Kel Modderman <kelrin@tpg.com.au>  Sun, 13 Nov 2005 18:04:06 +1000
+
+kanotix-kernelhacking (2.6.14.5) unstable; urgency=low
+
+  * remove lirc from the dependencies, because the debian package is utterly
+    broken.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 11 Nov 2005 00:45:33 +0100
+
+kanotix-kernelhacking (2.6.14.4) unstable; urgency=low
+
+  * switch to debian linux-wlan-ng.
+  * depend on ibdriver.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon,  7 Nov 2005 12:19:37 +0100
+
+kanotix-kernelhacking (2.6.14.3) unstable; urgency=low
+
+  * Addition of ibdriver.
+
+ -- Kel Modderman <kelrin@tpg.com.au>  Wed,  2 Nov 2005 23:18:55 +1000
+
+kanotix-kernelhacking (2.6.14.2) unstable; urgency=low
+
+  * don't depend on kernel-kbuild-2.6-3 any longer.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 31 Oct 2005 01:00:22 +0100
+
+kanotix-kernelhacking (2.6.14.1) unstable; urgency=low
+
+  * adapt for kernel 2.6.14.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 31 Oct 2005 00:25:33 +0100
+
+kanotix-kernelhacking (2.6.13.23) unstable; urgency=low
+
+  * fix unp-kernel-modules also for i386 only modules.
+  * make unp-kernel-modules less chatty (increase the VERBOSITY level, if you
+    want).
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 24 Oct 2005 14:55:30 +0200
+
+kanotix-kernelhacking (2.6.13.22) unstable; urgency=low
+
+  * fix unp-kernel-modules for brutal clean-ups.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 21 Oct 2005 17:37:06 +0200
+
+kanotix-kernelhacking (2.6.13.21) unstable; urgency=low
+
+  * add ppscsi.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 15 Oct 2005 00:51:12 +0200
+
+kanotix-kernelhacking (2.6.13.20) unstable; urgency=low
+
+  * zd1211 is i386 only.
+  * drop ath-driver, it's effectively unusable and conflicts with upcoming
+    madwifi development.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 10 Oct 2005 15:45:32 +0200
+
+kanotix-kernelhacking (2.6.13.19) unstable; urgency=low
+
+  [ Kel Modderman ]
+  * Add ath-driver and sl-modem to unp-kernel-modules.
+  * Update kanotix-modules depends.
+
+  [ Stefan Lippers-Hollmann ]
+  * sponsor upload.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun,  2 Oct 2005 15:38:23 +0200
+
+kanotix-kernelhacking (2.6.13.18) unstable; urgency=low
+
+  * use -maxdepth 1 for find, to counter the massive performance decrease.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 29 Sep 2005 16:02:49 +0200
+
+kanotix-kernelhacking (2.6.13.17) unstable; urgency=low
+
+  * fix acer-acpi-source.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 29 Sep 2005 15:32:45 +0200
+
+kanotix-kernelhacking (2.6.13.16) unstable; urgency=low
+
+  [ Kel Modderman ]
+  * add acer-acpi to module depends.
+  * update unp-kernel-modules script to allow auto
+    detection of compression.
+
+  [ Stefan Lippers-Hollmann ]
+  * sponsor upload.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 29 Sep 2005 01:10:18 +0200
+
+kanotix-kernelhacking (2.6.13.15) unstable; urgency=low
+
+  * switch spca5xx to bzip2.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 22 Sep 2005 21:15:23 +0200
+
+kanotix-kernelhacking (2.6.13.14) unstable; urgency=low
+
+  * remove pwc again.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 22 Sep 2005 01:25:36 +0200
+
+kanotix-kernelhacking (2.6.13.13) unstable; urgency=low
+
+  * add pwc.
+  * remove make_driver, make_addon.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 19 Sep 2005 02:46:03 +0200
+
+kanotix-kernelhacking (2.6.13.12) unstable; urgency=low
+
+  * really add spca5xx.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed,  7 Sep 2005 23:27:50 +0200
+
+kanotix-kernelhacking (2.6.13.11) unstable; urgency=low
+
+  * fix hostap-source.tar.*gz*.
+  * add fuse-source.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue,  6 Sep 2005 02:34:01 +0200
+
+kanotix-kernelhacking (2.6.13.10) unstable; urgency=low
+
+  * add avm-source, lufs-source to dependencies.
+  * add make_driver.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 19 Aug 2005 18:53:36 +0200
+
+kanotix-kernelhacking (2.6.13.9) unstable; urgency=low
+
+  * NMU - fix Makefile targets (menuconfig, config).
+
+ -- Kel Modderman <kelrin@tpg.com.au>  Thu, 18 Aug 2005 16:30:38 +1000
+
+kanotix-kernelhacking (2.6.13.8) unstable; urgency=low
+
+  * remove hpt3xx-source dependency.
+  * add mk_dpatch.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 18 Aug 2005 01:31:45 +0200
+
+kanotix-kernelhacking (2.6.13.7) unstable; urgency=low
+
+  * fix amd64 compatibility.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 17 Aug 2005 03:44:11 +0200
+
+kanotix-kernelhacking (2.6.13.6) unstable; urgency=low
+
+  * update /usr/src/Makefile.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 15 Aug 2005 15:27:04 +0200
+
+kanotix-kernelhacking (2.6.13.5) unstable; urgency=low
+
+  * rename package.
+  * add cli tools
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 15 Aug 2005 15:11:53 +0200
+
+kanotix-modules (2.6.13.4) unstable; urgency=low
+
+  * fix lirc exceptions.
+  * sanitize output to stdout.
+  * add remove-all-kernels-completely.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 12 Aug 2005 18:47:30 +0200
+
+kanotix-modules (2.6.13.3) unstable; urgency=low
+
+  * remove ieee80211, ipw2100, ipw2200, those are handled by kernel patches
+    right now.
+  * add acx, adm8211, qc-usb, qc-usb-messenger, zd1211.
+  * add very ugly workaround for linux-wlan-ng.:wq
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 12 Aug 2005 14:42:34 +0200
+
+kanotix-modules (2.6.13.2) unstable; urgency=low
+
+  * fix unpack.
+  * clean /usr/src/modules more thoroughly.
+  * move acerhk-source to Recommends:.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun,  7 Aug 2005 01:56:11 +0200
+
+kanotix-modules (2.6.13.1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat,  6 Aug 2005 13:30:47 +0200
+
