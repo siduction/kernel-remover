@@ -7,6 +7,7 @@ Build-Depends: debhelper (>= 8)
 Standards-Version: 3.9.2
 Vcs-Git: git://git.siduction.org/packages/siduction-repository/kernel-remover
 Vcs-Browser: http://git.siduction.org/packages/siduction-repository/kernel-remover.git 
+Homepage: http://svn.berlios.de/wsvn/fullstory/kernel-remover/trunk
 
 Package: kernel-remover
 Architecture: all

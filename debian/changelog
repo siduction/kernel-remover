@@ -1,3 +1,9 @@
+kernel-remover (3.1.6) unstable; urgency=low
+
+  * debian/control homepage
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 28 Nov 2011 01:39:45 +0100
+
 kernel-remover (3.1.5) unstable; urgency=low
 
   * Introduce me as Maintainer
