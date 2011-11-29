@@ -1,3 +1,9 @@
+kernel-remover (3.1.7) unstable; urgency=low
+
+  * debian/source/option bz9 
+
+ -- Alf Gaida <agaida@siduction.org>  Tue, 29 Nov 2011 09:57:30 +0100
+
 kernel-remover (3.1.6) unstable; urgency=low
 
   * debian/control homepage
