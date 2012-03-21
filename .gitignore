@@ -1,0 +1,7 @@
+debian/files
+debian/kernel-remover.debhelper.log
+debian/kernel-remover.postinst.debhelper
+debian/kernel-remover.postrm.debhelper
+debian/kernel-remover.substvars
+debian/kernel-remover/
+po/locale/

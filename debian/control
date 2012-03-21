@@ -3,8 +3,8 @@ Section: misc
 Priority: extra
 Maintainer: Alf Gaida <agaida@siduction.org>
 XSBC-Original-Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
-Build-Depends: debhelper (>= 8)
-Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.3
 Vcs-Git: git://git.siduction.org/packages/siduction-repository/kernel-remover
 Vcs-Browser: http://git.siduction.org/packages/siduction-repository/kernel-remover.git 
 Homepage: http://svn.berlios.de/wsvn/fullstory/kernel-remover/trunk

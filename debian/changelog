@@ -1,3 +1,11 @@
+kernel-remover (3.1.8) unstable; urgency=low
+
+  * bump standards to 3.9.3
+  * bump compat to 9
+  * .gitignore created 
+
+ -- Alf Gaida <agaida@siduction.org>  Wed, 21 Mar 2012 13:37:09 +0100
+
 kernel-remover (3.1.7) unstable; urgency=low
 
   * debian/source/option bz9 
