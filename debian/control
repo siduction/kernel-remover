@@ -14,7 +14,8 @@ Architecture: all
 Depends: ${misc:Depends},
  gettext-base,
  dctrl-tools,
- ssft
+ ssft,
+ creativecommons3
 Description: tool for the removal of the Linux kernel packages
  This tool handles the common tasks while handling testing kernels, the removal
  of deprecated kernel images, headers, depending packages, symlinks and 

@@ -1,3 +1,19 @@
+kernel-remover (3.1.10) unstable; urgency=low
+
+  * debian/copyright modified (dep5)
+  * creativecommons as dependency
+  * fixes #331
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 24 Mar 2012 12:40:49 +0100
+
+kernel-remover (3.1.9) unstable; urgency=low
+
+  * source override added to prevent lintian complaining about
+    XSBC-Original-Maintainer 
+  * fixes #647
+
+ -- Alf Gaida <agaida@siduction.org>  Thu, 22 Mar 2012 21:43:51 +0100
+
 kernel-remover (3.1.8) unstable; urgency=low
 
   * bump standards to 3.9.3
