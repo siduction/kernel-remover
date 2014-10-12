@@ -1,3 +1,19 @@
+kernel-remover (3.1.12) unstable; urgency=low
+
+  * debian/menu modified to show icon in fluxbox menu
+
+ -- Angelescu Ovidiu <convbsd@siduction.org>  Sun, 12 Oct 2014 23:35:06 +0300
+
+kernel-remover (3.1.11) unstable; urgency=low
+
+  * Standards-Version: 3.9.4
+  * debian/copyright format
+  * XSBC-Original-Maintainer removed   
+  * debian/source.lintian-overrides removed 
+  * hompage removed from debian/control, added source in copyright
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 30 Mar 2013 13:56:50 +0100
+
 kernel-remover (3.1.10) unstable; urgency=low
 
   * debian/copyright modified (dep5)

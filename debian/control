@@ -2,12 +2,10 @@ Source: kernel-remover
 Section: misc
 Priority: extra
 Maintainer: Alf Gaida <agaida@siduction.org>
-XSBC-Original-Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
 Build-Depends: debhelper (>= 9)
-Standards-Version: 3.9.3
-Vcs-Git: git://git.siduction.org/packages/siduction-repository/kernel-remover
-Vcs-Browser: http://git.siduction.org/packages/siduction-repository/kernel-remover.git 
-Homepage: http://svn.berlios.de/wsvn/fullstory/kernel-remover/trunk
+Standards-Version: 3.9.4
+Vcs-Git: git://git.siduction.org/code/kernel-remover.git
+Vcs-Browser: http://git.siduction.org/?p=code/kernel-remover.git;a=summary 
 
 Package: kernel-remover
 Architecture: all
@@ -15,7 +13,7 @@ Depends: ${misc:Depends},
  gettext-base,
  dctrl-tools,
  ssft,
- creativecommons3
+ creativecommons3,
 Description: tool for the removal of the Linux kernel packages
  This tool handles the common tasks while handling testing kernels, the removal
  of deprecated kernel images, headers, depending packages, symlinks and 
@@ -23,4 +21,3 @@ Description: tool for the removal of the Linux kernel packages
  .
  Neither the currently running-, nor the newest kernels will be offered for
  removal.
-

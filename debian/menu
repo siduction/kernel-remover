@@ -3,6 +3,5 @@
 	section="Applications/System/Administration" \
 	hints="siduction,Config" \
 	title="remove old kernel" \
-	icon32x32="/usr/share/pixmaps/kernel-remover.xpm" \
-	icon16x16="/usr/share/pixmaps/kernel-remover-16.xpm" \
+	icon="/usr/share/pixmaps/kernel-remover.xpm" \
 	command="su-to-root -c /usr/sbin/kernel-remover"

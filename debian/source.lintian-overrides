@@ -1,5 +1,0 @@
-# tell lintian not to complain about the XSBC-Original-Maintainer
-# Everything can be an X-Field. And the original maintainer should
-# be standard
-kernel-remover: unknown-field-in-dsc original-maintainer
-
