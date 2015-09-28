@@ -3,17 +3,17 @@ Section: misc
 Priority: extra
 Maintainer: Alf Gaida <agaida@siduction.org>
 Build-Depends: debhelper (>= 9)
-Standards-Version: 3.9.4
+Standards-Version: 3.9.6
 Vcs-Git: git://git.siduction.org/code/kernel-remover.git
 Vcs-Browser: http://git.siduction.org/?p=code/kernel-remover.git;a=summary 
 
 Package: kernel-remover
 Architecture: all
-Depends: ${misc:Depends},
- gettext-base,
- dctrl-tools,
- ssft,
- creativecommons3,
+Depends:  ${misc:Depends},
+          gettext-base,
+          dctrl-tools,
+          ssft,
+          creativecommons3,
 Description: tool for the removal of the Linux kernel packages
  This tool handles the common tasks while handling testing kernels, the removal
  of deprecated kernel images, headers, depending packages, symlinks and 

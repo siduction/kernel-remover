@@ -1,3 +1,10 @@
+kernel-remover (3.1.13) unstable; urgency=medium
+
+  * moved to extra 
+   * new standards
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 28 Sep 2015 23:07:42 +0200
+
 kernel-remover (3.1.12) unstable; urgency=low
 
   * debian/menu modified to show icon in fluxbox menu
