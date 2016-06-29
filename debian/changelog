@@ -1,75 +1,100 @@
+kernel-remover (3.1.16) unstable; urgency=medium
+
+  * Added menu (providing su-to-root) as dependency 
+  * Added  zenity as recommendation
+  * Bump standards to 3.9.8, no changes needed
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 25 Jun 2016 20:11:21 +0200
+
+kernel-remover (3.1.15) unstable; urgency=medium
+
+  * use parallel building.
+  * apply the CTTE decision and remove support for the obsolete "Debian Menu
+    System" (#741573).
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 02 Sep 2015 20:11:16 +0200
+
+kernel-remover (3.1.14) unstable; urgency=medium
+
+  * fix debian/copyright to properly validate against the final specification.
+  * bump standards version to 3.9.6, no changes necessary.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 03 Jan 2015 23:59:26 +0100
+
 kernel-remover (3.1.13) unstable; urgency=medium
 
-  * moved to extra 
-   * new standards
+  * switch from grep-available to grep-status, in order to actually query the
+    current system state; this fixes identifying obsolete kernel packages with
+    the current dpkg.
 
- -- Alf Gaida <agaida@siduction.org>  Mon, 28 Sep 2015 23:07:42 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 20 Aug 2014 07:05:00 +0200
 
-kernel-remover (3.1.12) unstable; urgency=low
+kernel-remover (3.1.12) unstable; urgency=medium
 
-  * debian/menu modified to show icon in fluxbox menu
+  * bump standards version to 3.9.5, no changes necessary.
+  * debian/control: switch Vcs tags to github.
+  * add Keywords entry to XDG desktop files.
 
- -- Angelescu Ovidiu <convbsd@siduction.org>  Sun, 12 Oct 2014 23:35:06 +0300
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 13 Apr 2014 23:37:38 +0200
 
 kernel-remover (3.1.11) unstable; urgency=low
 
-  * Standards-Version: 3.9.4
-  * debian/copyright format
-  * XSBC-Original-Maintainer removed   
-  * debian/source.lintian-overrides removed 
-  * hompage removed from debian/control, added source in copyright
+  * s/actual/current/
+  * remove empty if leaves.
+  * fix bashism.
+  * avoid wonky quoting in awk calls.
 
- -- Alf Gaida <agaida@siduction.org>  Sat, 30 Mar 2013 13:56:50 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 12 Jan 2013 03:21:54 +0100
 
 kernel-remover (3.1.10) unstable; urgency=low
 
-  * debian/copyright modified (dep5)
-  * creativecommons as dependency
-  * fixes #331
+  * update FSF postal address to be URLs.
+  * bump standards version to 3.9.4, no changes necessary.
 
- -- Alf Gaida <agaida@siduction.org>  Sat, 24 Mar 2012 12:40:49 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 12 Jan 2013 03:20:52 +0100
 
 kernel-remover (3.1.9) unstable; urgency=low
 
-  * source override added to prevent lintian complaining about
-    XSBC-Original-Maintainer 
-  * fixes #647
+  * add ukrainian translation.
+  * update debian/copyright to dep-5.
 
- -- Alf Gaida <agaida@siduction.org>  Thu, 22 Mar 2012 21:43:51 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 10 Oct 2012 03:35:23 +0200
 
 kernel-remover (3.1.8) unstable; urgency=low
 
-  * bump standards to 3.9.3
-  * bump compat to 9
-  * .gitignore created 
+  * use -G as the option to define the graphics frontend instead of -F
 
- -- Alf Gaida <agaida@siduction.org>  Wed, 21 Mar 2012 13:37:09 +0100
+ -- Joaquim Boura <x-un-i@berlios.de>  Wed, 29 Aug 2012 18:08:14 +0200
 
 kernel-remover (3.1.7) unstable; urgency=low
 
-  * debian/source/option bz9 
+  [ Joaquim Boura ]
+  * added new language translations ( uk+ru thks to RoEn)
+    fixed my email
+  * added RoEn (ru) and polix (uk) to the copyright file
 
- -- Alf Gaida <agaida@siduction.org>  Tue, 29 Nov 2011 09:57:30 +0100
+  [ Stefan Lippers-Hollmann ]
+  * fix whitespace/ coding style.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 19 Jul 2012 02:10:07 +0200
 
 kernel-remover (3.1.6) unstable; urgency=low
 
-  * debian/control homepage
+  * bump standards version to 3.9.3, no changes necessary.
 
- -- Alf Gaida <agaida@siduction.org>  Mon, 28 Nov 2011 01:39:45 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 23 Feb 2012 16:48:51 +0100
 
 kernel-remover (3.1.5) unstable; urgency=low
 
-  * Introduce me as Maintainer
-  * remove aptosid stuff
-  * misc changes
+  * update icons.
 
- -- Alf Gaida <agaida@siduction.org>  Sat, 26 Nov 2011 11:51:35 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 16 Jan 2012 03:48:58 +0100
 
-kernel-remover (3.1.4) UNRELEASED; urgency=low
+kernel-remover (3.1.4) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * switch to compat level 9.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 29 Apr 2011 04:57:04 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 16 Jan 2012 01:48:07 +0100
 
 kernel-remover (3.1.3) unstable; urgency=low
 

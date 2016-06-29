@@ -20,11 +20,11 @@ msgid "Removing installed kernels"
 msgstr ""
 
 #: kernel-remover:98
-msgid "The actual (active) kernel is ${PAD}$(uname -r)${PAD}"
+msgid "The current (active) kernel is ${PAD}$(uname -r)${PAD}"
 msgstr ""
 
 #: kernel-remover:99
-msgid "The actual (active) kernel is $(uname -r)"
+msgid "The current (active) kernel is $(uname -r)"
 msgstr ""
 
 #: kernel-remover:213

@@ -1,7 +1,0 @@
-?package(kernel-remover): \
-	needs="X11" \
-	section="Applications/System/Administration" \
-	hints="siduction,Config" \
-	title="remove old kernel" \
-	icon="/usr/share/pixmaps/kernel-remover.xpm" \
-	command="su-to-root -c /usr/sbin/kernel-remover"

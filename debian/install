@@ -1,6 +1,5 @@
 kernel-remover			usr/sbin/
-kernel-remover.desktop		usr/share/applications/siduction/
+kernel-remover.desktop		usr/share/applications
 icons/kernel-remover.svg	usr/share/icons/hicolor/scalable/apps/
 icons/hicolor			usr/share/icons
-icons/pixmaps			usr/share/
 po/locale			usr/share/
