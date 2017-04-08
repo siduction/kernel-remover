@@ -16,7 +16,7 @@ Depends: ${misc:Depends},
  dctrl-tools,
  menu,
  ssft
-Recommends: zenity 
+Suggests: zenity 
 Description: tool for the removal of the Linux kernel packages
  This tool handles the common tasks while handling testing kernels, the removal
  of deprecated kernel images, headers, depending packages, symlinks and 
